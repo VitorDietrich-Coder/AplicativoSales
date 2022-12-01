@@ -10,11 +10,11 @@ using Sales.Models;
 
 namespace Sales.Controllers
 {
-    public class DepartamentoesController : Controller
+    public class DepartamentosController : Controller
     {
         private readonly SalesContext _context;
 
-        public DepartamentoesController(SalesContext context)
+        public DepartamentosController(SalesContext context)
         {
             _context = context;
         }
@@ -54,7 +54,7 @@ namespace Sales.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome")] Departamento departamento)
+        public async Task<IActionResult> Create([Bind("Id,Nome")] Departamentos departamento)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace Sales.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome")] Departamento departamento)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome")] Departamentos departamento)
         {
             if (id != departamento.Id)
             {
