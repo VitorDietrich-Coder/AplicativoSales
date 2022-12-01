@@ -28,4 +28,4 @@
 </p>
 <hr>
 
-This repository is inventory management software
+ 
